@@ -75,6 +75,7 @@ Placement of LL(1): inside LR(1) but incomparable with SLR/LALR (LL(1) and LR(0)
 - LR(0): item set with a complete item and any other item is a conflict. Complete-item-only state is safe.
   
 - Handle = substring matching RHS whose reduction is a step of reverse rightmost derivation. Viable prefix = prefix of right-sentential form that does not extend past handle.
+  
 - Operator precedence parser: no ε-productions and no two adjacent non-terminals on RHS. Not every unambiguous grammar is LR; every LR(k) is unambiguous.
 
 **Traps:** (1) CLR and LALR have the same ACTION entries for shift; LALR merging cannot create SR conflicts. (2) Number of LALR states = number of LR(0) states. (3) A grammar with ε and left recursion cannot be LL(1). (4) Every regular grammar is LR(1) only if unambiguous.
