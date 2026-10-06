@@ -10,6 +10,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 - Front end: lexical, syntax, semantic, ICG. Back end: optimization (machine-dep. part), codegen.
   
 - **Pass** = one read of the whole program. **Phase** = logical step. Many phases can fit in one pass.
+  
 - Lexical errors: illegal char. Syntax errors: missing token/bracket. Semantic: type mismatch, undeclared var, scope.
 - Cross-compiler: host ≠ target. Bootstrapping uses T-diagrams.
 
