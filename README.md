@@ -131,6 +131,7 @@ Three-address code: `x = y op z`. Example `a = b*-c + b*-c`:
 
 ## 8. Code generation
 
+
 - Issues: instruction selection, register allocation, evaluation order, addressing modes.
 - **Register allocation by graph colouring**: interference graph, k registers ⇒ k-colourable; if not, spill. Minimum registers = chromatic number of interference graph (live ranges overlapping).
 - Sethi–Ullman for expression trees: label leaf (left) = 1, right leaf = 0; node with children l1, l2: if l1≠l2 then max(l1,l2), else l1+1. Result = minimum registers with no spill.
