@@ -137,6 +137,8 @@ Three-address code: `x = y op z`. Example `a = b*-c + b*-c`:
 
 ## Rapid-fire GATE checklist
 
+
+
 - Lexical = regular (DFA). Syntax = CFG (PDA). Semantics (declare-before-use, type match) = beyond CFG (needs context-sensitive checks).
 - Top-down uses FIRST/FOLLOW; LR(0) uses items only; SLR uses FOLLOW; CLR uses lookahead.
 - Counting questions: states in LR(0) DFA, number of tokens, number of basic blocks, number of TAC statements, number of ε entries in table.
