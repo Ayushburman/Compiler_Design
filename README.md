@@ -23,6 +23,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 
 **Trap:** Thompson NFA for regex of length n has ≤ 2n states. Subset construction can blow to 2n DFA states.
 
+
 ## 3. Parsing
 
 ### Grammar basics
