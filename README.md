@@ -20,6 +20,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 - **Token** = (type, attribute). **Lexeme** = actual string. **Pattern** = rule (regex).
   
 - Implemented as DFA from regex: regex → NFA (Thompson) → DFA (subset construction) → minimize.
+  
 - **Maximal munch** (longest match); tie → rule listed first (keyword before identifier).
 - Lexer strips whitespace and comments, tracks line numbers, builds symbol table entries.
 - Lexer cannot detect `if(` unbalanced or type errors; cannot count nesting (needs a PDA).
