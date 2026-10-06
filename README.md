@@ -26,6 +26,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 - Lexer strips whitespace and comments, tracks line numbers, builds symbol table entries.
   
 - Lexer cannot detect `if(` unbalanced or type errors; cannot count nesting (needs a PDA).
+  
 - Counting tokens: `printf("i=%d",&i);` → `printf ( "i=%d" , & i ) ;` = 8 tokens (string literal is 1). Longest match: `x+++++y` → `x ++ ++ + y`.
 
 **Trap:** Thompson NFA for regex of length n has ≤ 2n states. Subset construction can blow to 2n DFA states.
