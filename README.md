@@ -32,6 +32,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 - Left recursion kills top-down: `A→Aα|β` becomes `A→βA'`, `A'→αA'|ε`. Left factoring: `A→αβ1|αβ2` becomes `A→αA'`, `A'→β1|β2`.
 - Top-down = leftmost derivation. Bottom-up = reverse of rightmost derivation.
 
+
 ### Top-down: FIRST, FOLLOW, LL(1)
 
 **FIRST(X)**: terminal → itself. `X→ε` adds ε. `X→Y1Y2…`: add FIRST(Y1)−ε; if Y1 nullable add FIRST(Y2)… ; ε only if all nullable.\
@@ -142,5 +143,7 @@ Three-address code: `x = y op z`. Example `a = b*-c + b*-c`:
 - Ambiguity, left recursion, left factor: LL(1) fails. Ambiguous grammar is never LR.
 - Reduce only the handle. Stack content + remaining input = right sentential form.
 - Inherited attributes: LL friendly. Synthesized: LR friendly.
+
+
 
 **Revision order:** parsing tables (FIRST/FOLLOW, LR items) → data-flow → optimization → SDT → runtime. Parsing alone gives \~60% of the marks in this subject.
