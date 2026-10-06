@@ -46,6 +46,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 ### Top-down: FIRST, FOLLOW, LL(1)
 
 **FIRST(X)**: terminal → itself. `X→ε` adds ε. `X→Y1Y2…`: add FIRST(Y1)−ε; if Y1 nullable add FIRST(Y2)… ; ε only if all nullable.\
+
 **FOLLOW(A)**: FOLLOW(S) ∋ $. For `B→αAβ`: add FIRST(β)−ε. If β nullable or empty: add FOLLOW(B). FOLLOW never contains ε.\
 **LL(1) table**: for `A→α`: M\[A,a\] for a∈FIRST(α); if ε∈FIRST(α), M\[A,b\] for b∈FOLLOW(A).
 
