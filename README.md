@@ -15,6 +15,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
   
 - Cross-compiler: host ≠ target. Bootstrapping uses T-diagrams.
 
+
 ## 2. Lexical analysis
 
 - **Token** = (type, attribute). **Lexeme** = actual string. **Pattern** = rule (regex).
