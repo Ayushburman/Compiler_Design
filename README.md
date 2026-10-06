@@ -108,6 +108,7 @@ Three-address code: `x = y op z`. Example `a = b*-c + b*-c`:
 - Count temps/instructions: n-operator expression ⇒ n TAC statements (one per operator). DAG removes common subexpressions, so fewer nodes. Syntax tree has no sharing.
   
 - Backpatching: fill jump targets later for boolean/control flow in one pass (truelist, falselist, `nextlist`).
+  
 - Postfix, syntax tree, DAG, TAC, control flow graph are all IR forms. Arrays: `A[i]` address = base + (i − low)·w (row-major 2D: base + ((i−l1)·n2 + (j−l2))·w).
 
 ## 6. Runtime environment
