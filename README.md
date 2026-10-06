@@ -92,6 +92,7 @@ Placement of LL(1): inside LR(1) but incomparable with SLR/LALR (LL(1) and LR(0)
 - **L-attributed**: each inherited attribute of Xi depends on parent's inherited and attributes of X1…Xi-1 only (left to right). Includes S-attributed. Works with LL parsing / DFS.
   
 - Dependency graph must be acyclic. Semantic action placed mid-RHS = SDT scheme. Marker non-terminals (ε) let LR do mid-actions.
+  
 - Type checking, type coercion, symbol table scope handling all happen in semantic analysis.
 
 ## 5. Intermediate code
