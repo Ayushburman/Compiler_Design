@@ -39,6 +39,7 @@ GATE CSE · full syllabus · diagrams, rules, formulas, traps
 - CFG = (V, T, P, S). Ambiguous: more than one parse tree / leftmost derivation. Ambiguity is undecidable. Fix with precedence + associativity layering.
   
 - Left recursion kills top-down: `A→Aα|β` becomes `A→βA'`, `A'→αA'|ε`. Left factoring: `A→αβ1|αβ2` becomes `A→αA'`, `A'→β1|β2`.
+  
 - Top-down = leftmost derivation. Bottom-up = reverse of rightmost derivation.
 
 
