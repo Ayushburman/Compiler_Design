@@ -175,6 +175,7 @@ Three-address code: `x = y op z`. Example `a = b*-c + b*-c`:
 - Ambiguity, left recursion, left factor: LL(1) fails. Ambiguous grammar is never LR.
   
 - Reduce only the handle. Stack content + remaining input = right sentential form.
+  
 - Inherited attributes: LL friendly. Synthesized: LR friendly.
 
 
