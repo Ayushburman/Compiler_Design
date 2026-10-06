@@ -119,6 +119,7 @@ Three-address code: `x = y op z`. Example `a = b*-c + b*-c`:
 - Parameter passing: **call by value** (copy), **reference** (address), **copy-restore** (value-result), **by name** (textual substitution, re-evaluated each use). Swap(i, a\[i\]) shows differences.
   
 - Storage: static (compile-time size), stack (recursion), heap (dynamic). Garbage collection/ dangling references live in heap.
+  
 - Display array: access non-local in O(1); access link chain: O(depth).
 
 ## 7. Code optimization
