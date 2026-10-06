@@ -71,6 +71,7 @@ Placement of LL(1): inside LR(1) but incomparable with SLR/LALR (LL(1) and LR(0)
 - Augment grammar with `S'→S`. Closure + goto build the DFA of item sets. ACTION table (terminals): shift/reduce/accept; GOTO table (non-terminals).
   
 - Conflicts: **SR** (shift vs reduce), **RR** (two reductions). Shift/reduce resolved by shifting (yacc) and precedence. RR resolved by earlier rule.
+  
 - LR(0): item set with a complete item and any other item is a conflict. Complete-item-only state is safe.
 - Handle = substring matching RHS whose reduction is a step of reverse rightmost derivation. Viable prefix = prefix of right-sentential form that does not extend past handle.
 - Operator precedence parser: no ε-productions and no two adjacent non-terminals on RHS. Not every unambiguous grammar is LR; every LR(k) is unambiguous.
